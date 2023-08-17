@@ -1,6 +1,8 @@
 export const getDataFromApi = async (name) => {
+  const origin = window.location.origin;
+
   try {
-    const resp = await fetch(`/public/json/${name}.json`);
+    const resp = await fetch(`${origin}/public/json/${name}.json`);
     const data = await resp.json();
     return data;
   } catch (error) {

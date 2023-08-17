@@ -9,6 +9,8 @@ const initPage = async () => {
   const config = getConfig();
   const { header, data, carrousel, gallery } = config;
 
+  console.log("location", window.location);
+
   initHeader(header);
 
   if (data) {
