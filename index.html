@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La ferme des 2 yourtes</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- HEADER - DESK -->
+    <header class="header__desk">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="https://dummyimage.com/100x100" class="cover" />
+        </div>
+
+        <nav class="nav__pages">
+          <div class="nav__pages__link">
+            <a>ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <nav class="nav__user">
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER - DESK - END -->
+
+    <!-- HEADER - MOB -->
+    <header class="header__mobile">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="https://dummyimage.com/100x100" class="cover" />
+        </div>
+
+        <div class="header__menu__button">
+          <img src="https://dummyimage.com/25x25" class="cover" />
+        </div>
+      </div>
+    </header>
+
+    <section class="menu__mobile">
+      <div class="menu__mobile__cross">
+        <img src="https://dummyimage.com/25x25" class="cover" />
+      </div>
+
+      <div class="menu__mobile__wrapper">
+        <nav class="nav__pages">
+          <div class="nav__pages__link">
+            <a>ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <nav class="nav__user">
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- HEADER - MOB - END -->
+
+    <main>
+      <section class="page__title">
+        <h1>
+          Bienvenue à
+          <br />
+          la ferme des 2 yourtes
+        </h1>
+      </section>
+
+      <section class="home__carrousel">
+        <div class="section__wrapper">
+          <div class="carrousel__wrapper">
+            <div class="carrousel__buttons">
+              <img
+                src="https://dummyimage.com/25x25"
+                id="carrouselPrevButton"
+              />
+              <img
+                src="https://dummyimage.com/25x25"
+                id="carrouselNextButton"
+              />
+            </div>
+
+            <div class="carrousel__sections__container">
+              <!-- CARROUSEL SECTION TEMPLATE -->
+              <template id="carrouselSectionTemplate">
+                <div class="carrousel__section__wrapper">
+                  <div class="carrousel__section__image">
+                    <img />
+                  </div>
+                  <div class="carrousel__section__content">
+                    <div class="carrousel__content__wrapper">
+                      <div class="carrousel__content__title">
+                        <h2></h2>
+                      </div>
+                      <div class="carrousel__content__description">
+                        <h3></h3>
+                      </div>
+                      <div class="carrousel__content__cta">
+                        <button type="button" class="cta"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+              <!-- CARROUSEL SECTION TEMPLATE - END -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home__gallery">
+        <div class="gallery__wrapper section__wrapper">
+          <div class="gallery__title section__title">
+            <div></div>
+            <h2>Nos coups de coeur du moment</h2>
+            <div></div>
+          </div>
+
+          <div class="gallery__cards__container">
+            <!-- TEMPLATE - GALLERY CARD -->
+            <template id="galleryCardTemplate">
+              <div class="gallery__card__wrapper">
+                <div class="gallery__card__image">
+                  <img class="contain" />
+                </div>
+
+                <div class="gallery__card__content">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+            </template>
+            <!-- TEMPLATE - GALLERY CARD - END -->
+          </div>
+        </div>
+      </section>
+
+      <section class="home__contact">
+        <div class="home__contact__wrapper section__wrapper">
+          <div class="home__contact__title section__title">
+            <div></div>
+            <h2>Nous rencontrer</h2>
+            <div></div>
+          </div>
+
+          <div class="home__contact__hours">
+            <h3>Accueil à la ferme</h3>
+            <ul>
+              <li>
+                <p>lundi:</p>
+                <p>
+                  de <span>8h</span> à <span>12h</span>, de <span>14h</span> à
+                  <span>18h</span>
+                </p>
+              </li>
+              <li>
+                <p>mardi:</p>
+                <p>
+                  de <span>8h</span> à <span>12h</span>, de <span>14h</span> à
+                  <span>18h</span>
+                </p>
+              </li>
+              <li>
+                <p>mercredi:</p>
+                <p>
+                  de <span>8h</span> à <span>12h</span>, de <span>14h</span> à
+                  <span>18h</span>
+                </p>
+              </li>
+              <li>
+                <p>jeudi:</p>
+                <p>
+                  de <span>8h</span> à <span>12h</span>, de <span>14h</span> à
+                  <span>18h</span>
+                </p>
+              </li>
+              <li>
+                <p>vendredi:</p>
+                <p>
+                  de <span>8h</span> à <span>12h</span>, de <span>14h</span> à
+                  <span>18h</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="home__contact__image">
+            <img
+              src="public/images/yourte.webp"
+              alt="dessin d'une yourte"
+              class="contain"
+            />
+          </div>
+
+          <div class="home__contact__distance">
+            <h3>Vos questions</h3>
+
+            <ul>
+              <li>
+                <p>tel:</p>
+                <p>01 02 03 04 05</p>
+              </li>
+              <li>
+                <p>couriel:</p>
+                <p>exemple@exemple.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__wrapper section__wrapper">
+        <nav class="footer__social">
+          <div class="footer__social__link">
+            <img src="https://dummyimage.com/50x50" />
+          </div>
+          <div class="footer__social__link">
+            <img src="https://dummyimage.com/50x50" />
+          </div>
+        </nav>
+
+        <nav class="footer__nav__pages">
+          <div class="nav__pages__link">
+            <a>ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a>&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <div class="footer__banner__bottom">
+          <div>
+            <a>Mentions légales</a>
+          </div>
+          <div>
+            <p>Tous droits réservés - 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
