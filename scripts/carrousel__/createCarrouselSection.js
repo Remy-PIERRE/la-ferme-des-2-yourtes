@@ -7,12 +7,14 @@ import {
   setCarrouselSectionWrapper,
   setCarrouselSectionImage,
   setCarrouselSectionTitle,
-  setCarrouselSectionDescription,
+  setCarouselSectionDescription,
   setCarrouselSectionCta,
-} from "./setCarrousel.js";
+} from "./setCarrouselElements.js";
 
 export const createCarrouselSection = (data, index) => {
   const { id, title, description, cta, imageUrl } = data;
+
+  console.log("carrousel section data", data);
 
   const container = getCarrouselContainer();
   const template = getCarrouselSectionTemplate();
@@ -20,7 +22,7 @@ export const createCarrouselSection = (data, index) => {
   setCarrouselSectionWrapper(template, id, index);
   setCarrouselSectionImage(template, imageUrl, title);
   setCarrouselSectionTitle(template, title);
-  setCarrouselSectionDescription(template, description);
+  setCarouselSectionDescription(template, description);
   setCarrouselSectionCta(template, cta);
 
   insertElement(container, template);

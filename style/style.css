@@ -28,6 +28,12 @@ html {
   object-fit: contain;
 }
 
+.fill {
+  width: inherit;
+  height: inherit;
+  object-fit: fill;
+}
+
 /* BUTTONS */
 .cta {
   height: 36px;
@@ -413,7 +419,8 @@ main {
 
 .carrousel__section__image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -424,6 +431,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .carrousel__content__title {
@@ -453,6 +461,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .carrousel__wrapper {
+    aspect-ratio: 2 / 1;
+  }
+
+  .carrousel__sections__container {
+    left: calc(-100% - 1px);
+  }
+
+  .carrousel__section__wrapper {
+    height: calc(100% + 1px);
+    aspect-ratio: 2 / 1;
+  }
+
+  .carrousel__content__wrapper {
+    height: 100%;
+    justify-content: center;
+  }
+
+  .carrousel__section__wrapper .carrousel__section__image {
+    left: 0;
+  }
+
+  .carrousel__section__wrapper .carrousel__section__content {
+    left: auto;
+    right: 0;
+  }
 }
 
 /* HOME GALLERY */
@@ -790,6 +827,7 @@ footer {
     transform: translate(33.3%, 0);
   }
 }
+
 @keyframes carrousel__next {
   from {
     transform: translate(0, 0);

@@ -7,7 +7,7 @@
       "text": "Boutique",
       "path": "/boutique"
     },
-    "imageUrl": "/public/images/famille_ferme.jpg"
+    "imageUrl": "public/images/famille_ferme.jpg"
   },
   {
     "id": "2",
@@ -17,7 +17,7 @@
       "text": "Blog",
       "path": "/blog"
     },
-    "imageUrl": "/public/images/mouton.jpg"
+    "imageUrl": "public/images/mouton.jpg"
   },
   {
     "id": "3",
@@ -27,6 +27,6 @@
       "text": "&Agrave; propos",
       "path": "/a-propos"
     },
-    "imageUrl": "/public/images/mouton_portrait.jpg"
+    "imageUrl": "public/images/mouton_portrait.jpg"
   }
 ]

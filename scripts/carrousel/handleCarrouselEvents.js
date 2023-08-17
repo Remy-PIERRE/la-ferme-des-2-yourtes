@@ -1,28 +1,16 @@
 import {
-  getCarrouselPrevButton,
   getCarrouselNextButton,
+  getCarrouselPrevButton,
 } from "./getCarrouselElements.js";
 import {
-  handleCarrouselContainerPrevAnimation,
-  handleCarrouselContainerNextAnimation,
-  setContainerNextIndex,
-  setContainerPrevIndex,
-} from "./carrouselContainer.js";
+  handleCarrouselNextAnimation,
+  handleCarrouselPrevAnimation,
+} from "./handleCarrouselAnimations.js";
 
 export const handleCarrouselEvents = () => {
   const prevButton = getCarrouselPrevButton();
-  prevButton.addEventListener("click", handleCarrouselPrevButtonClick);
+  prevButton.addEventListener("click", handleCarrouselPrevAnimation);
 
   const nextButton = getCarrouselNextButton();
-  nextButton.addEventListener("click", handleCarrouselNextButtonClick);
-};
-
-const handleCarrouselPrevButtonClick = () => {
-  setContainerPrevIndex();
-  handleCarrouselContainerPrevAnimation();
-};
-
-const handleCarrouselNextButtonClick = () => {
-  setContainerNextIndex();
-  handleCarrouselContainerNextAnimation();
+  nextButton.addEventListener("click", handleCarrouselNextAnimation);
 };
