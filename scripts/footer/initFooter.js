@@ -1,12 +1,11 @@
-import { initHeaderMenuMobile } from "./initMenuMobile.js";
 import { getCurrentPage } from "../page/getCurrentPage.js";
-import { getHeaderLinksList } from "./getHeaderElements.js";
-import { setLinkActive, setLinkHref } from "./setHeaderElements.js";
+import { getFooterLinksList } from "./getFooterElements.js";
+import { setLinkActive, setLinkHref } from "../header/setHeaderElements.js";
 import { hasClass } from "../utils/hasClass.js";
 
-export const initHeader = () => {
+export const initFooter = () => {
   const currentPage = getCurrentPage();
-  const linksList = getHeaderLinksList();
+  const linksList = getFooterLinksList();
 
   for (const link of linksList) {
     if (hasClass(link, currentPage)) {
@@ -16,6 +15,4 @@ export const initHeader = () => {
       setLinkHref(link);
     }
   }
-
-  initHeaderMenuMobile();
 };

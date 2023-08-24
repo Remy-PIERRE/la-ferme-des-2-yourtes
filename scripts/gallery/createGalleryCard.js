@@ -1,4 +1,4 @@
-import { insertElement } from "../utils/insertElements.js";
+import { insertElement } from "../utils__/insertElements.js";
 import {
   getGalleryCardTemplate,
   getGalleryCardsContainer,

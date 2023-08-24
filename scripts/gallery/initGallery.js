@@ -1,4 +1,4 @@
-import { getDataCategory } from "../data/dataInstance.js";
+import { getDataCategory } from "../data__/dataInstance.js";
 import { createGalleryCard } from "./createGalleryCard.js";
 
 export const initGallery = (config) => {

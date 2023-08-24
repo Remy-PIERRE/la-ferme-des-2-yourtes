@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - La ferme des 2 yourtes</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <!-- HEADER - DESK -->
+    <header class="header__desk">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="https://dummyimage.com/100x100" class="cover" />
+        </div>
+
+        <nav class="nav__pages">
+          <div class="nav__pages__link">
+            <a href="./index.html">ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link active">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a href="./a-propos.html">&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <nav class="nav__user">
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER - DESK - END -->
+
+    <!-- HEADER - MOB -->
+    <header class="header__mobile">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="https://dummyimage.com/100x100" class="cover" />
+        </div>
+
+        <div class="header__menu__button">
+          <img src="https://dummyimage.com/25x25" class="cover" />
+        </div>
+      </div>
+    </header>
+
+    <section class="menu__mobile">
+      <div class="menu__mobile__cross">
+        <img src="https://dummyimage.com/25x25" class="cover" />
+      </div>
+
+      <div class="menu__mobile__wrapper">
+        <nav class="nav__pages">
+          <div class="nav__pages__link">
+            <a href="./index.html">ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link active">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a href="./a-propos.html">&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <nav class="nav__user">
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- HEADER - MOB - END -->
+
+    <main>
+      <section class="page__title">
+        <h1>La boutique</h1>
+      </section>
+
+      <section class="store__sideNav">
+        <!-- DESK -->
+        <div class="store__sideNav__wrapper__desk">
+          <div class="store__sideNav__title">
+            <h2>Filtres bureau</h2>
+          </div>
+
+          <div class="store__sideNav__container">
+            <template id="sideNavCategoryTemplate">
+              <div class="sideNav__category__wrapper">
+                <div class="sideNav__category__title">
+                  <h3></h3>
+                </div>
+                <div class="sideNav__category__list"></div>
+              </div>
+            </template>
+
+            <template id="storeFilterListCheckboxTemplate">
+              <div class="store__filterList__wrapper">
+                <input type="checkbox" />
+                <label></label>
+              </div>
+            </template>
+
+            <template id="sideNavCategoryOptionTemplate">
+              <div class="store__filterList__wrapper">
+                <input type="radio" />
+                <label></label>
+              </div>
+            </template>
+          </div>
+        </div>
+        <!-- DESK - END -->
+
+        <!-- MOBILE -->
+        <div class="store__sideNav__wrapper__mobile">
+          <div>
+            <div class="store__sideNav__title">
+              <h2>Filtres mobile</h2>
+            </div>
+
+            <div class="sideNav__cross">
+              <img src="https://dummyimage.com/25x25" />
+            </div>
+
+            <div class="store__sideNav__container">
+              <template id="sideNavCategoryTemplate">
+                <div class="sideNav__category__wrapper">
+                  <div class="sideNav__category__title">
+                    <h3></h3>
+                  </div>
+                  <div class="sideNav__category__list"></div>
+                </div>
+              </template>
+
+              <template id="sideNavCategoryOptionTemplate">
+                <div class="sideNav__category__option__wrapper">
+                  <input type="checkbox" />
+                  <label></label>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+        <!-- MOBILE -END -->
+      </section>
+
+      <section class="store__gallery">
+        <div class="store__gallery__wrapper">
+          <div class="store__gallery__resume"></div>
+          <div class="store__gallery__products__container"></div>
+          <div class="store__gallery__pages"></div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer__wrapper section__wrapper">
+          <nav class="footer__social">
+            <div class="footer__social__link">
+              <img src="https://dummyimage.com/50x50" />
+            </div>
+            <div class="footer__social__link">
+              <img src="https://dummyimage.com/50x50" />
+            </div>
+          </nav>
+
+          <nav class="footer__nav__pages">
+            <div class="nav__pages__link">
+              <a href="./index.html">ACCUEIL</a>
+            </div>
+            <div class="nav__pages__link">
+              <a>BOUTIQUE</a>
+            </div>
+            <div class="nav__pages__link">
+              <a href="./a-propos.html">&Agrave; PROPOS</a>
+            </div>
+          </nav>
+
+          <div class="footer__banner__bottom">
+            <div>
+              <a>Mentions légales</a>
+            </div>
+            <div>
+              <p>Tous droits réservés - 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module" src="../scripts/main.js"></script>
+  </body>
+</html>

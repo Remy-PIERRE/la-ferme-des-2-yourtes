@@ -1,13 +1,14 @@
+import { dataConfig } from "./data-config.js";
+import { getDataFromApi } from "./api.js";
 import {
-  isInStorage,
   getDataFromStorage,
+  isInStorage,
   setDataStorage,
 } from "./dataStorage.js";
 import { setDataInstance } from "./dataInstance.js";
-import { getDataFromApi } from "./api.js";
 
-export const initData = async (config) => {
-  for (const category of config) {
+export const initData = async () => {
+  for (const category of dataConfig) {
     const { fileName, storageName } = category;
 
     if (isInStorage(storageName)) {

@@ -1,4 +1,4 @@
-import { getDataCategory } from "../data/dataInstance.js";
+import { getDataCategory } from "../data__/dataInstance.js";
 import { setCarrouselContainer } from "./setCarrousel.js";
 import { createCarrouselSection } from "./createCarrouselSection.js";
 import { displayCarrouselCurrentSections } from "./displayCarrouselSections.js";

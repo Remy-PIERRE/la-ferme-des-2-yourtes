@@ -1,34 +1,37 @@
-import { getConfig } from "./config/getConfig.js";
 import { initHeader } from "./header/initHeader.js";
+import { initFooter } from "./footer/initFooter.js";
+import { initWindow } from "./window/initWindow.js";
 import { initData } from "./data/initData.js";
-import { initCarrousel } from "./carrousel/initCarrousel.js";
-import { initGallery } from "./gallery/initGallery.js";
+import { getCurrentPage } from "./page/getCurrentPage.js";
+import { initHome } from "./home/initHome.js";
+import { initStore } from "./store/initStore.js";
 import { getDataCategory } from "./data/dataInstance.js";
 
 const initPage = async () => {
-  const config = getConfig();
-  const { header, data, carrousel, gallery } = config;
+  console.log("init page");
 
-  initHeader(header);
+  console.log("init header");
+  initHeader();
+  console.log("init footer");
+  initFooter();
+  console.log("init window");
+  initWindow();
 
-  if (data) {
-    console.log("Hello data !", data);
-    await initData(data);
+  console.log("init data");
+  await initData();
+  console.log("data => products: ", getDataCategory("products"));
+  console.log("data => carrousel: ", getDataCategory("carrousel"));
 
-    /* DEV - DATA */
-    console.log("dataInstance - carrousel", getDataCategory("carrousel"));
-    console.log("dataInstance - gallery", getDataCategory("products"));
+  const currentPage = getCurrentPage();
+  if (currentPage === "home") {
+    console.log("init home");
+    initHome();
   }
-  if (carrousel) {
-    console.log("Hello carrousel !", carrousel);
-    initCarrousel(carrousel);
-  }
-  if (gallery) {
-    console.log("Hello gallery !", gallery);
-    initGallery(gallery);
+  if (currentPage === "store") {
+    console.log("init store");
+    initStore();
   }
 };
 
-console.log("Helllo world !");
-window.localStorage.clear();
+localStorage.clear();
 initPage();

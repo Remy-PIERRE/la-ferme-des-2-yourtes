@@ -4,55 +4,95 @@
     "name": "Bonnet bleu",
     "descriptionShort": "C'est un joli bonnet couleur azure",
     "cover": "public/images/bonnet_bleu.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": ["bonnet"],
+      "gender": ["all"],
+      "set": []
+    }
   },
   {
     "id": "2",
     "name": "Bonnet blanc",
     "descriptionShort": "Magnifique modele de bonnet blanc",
     "cover": "public/images/bonnet_blanc.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": ["bonnet"],
+      "gender": ["female"],
+      "set": []
+    }
   },
   {
     "id": "3",
     "name": "Pull mariniere",
     "descriptionShort": "&Agrave; la mode bretonne",
     "cover": "public/images/pull_mariniere.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": ["sweater"],
+      "gender": ["all"],
+      "set": []
+    }
   },
   {
     "id": "4",
     "name": "Chale noir",
     "descriptionShort": "Discretion de nuit assurée",
     "cover": "public/images/chale_noir.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": ["shawl"],
+      "gender": ["female"],
+      "set": []
+    }
   },
   {
     "id": "5",
     "name": "Chassettes grises",
     "descriptionShort": "Les pieds au chaud",
     "cover": "public/images/chaussettes_grises.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": [],
+      "gender": [],
+      "set": []
+    }
   },
   {
     "id": "6",
     "name": "Chassettes rouges",
     "descriptionShort": "Sous l'océaaaaan",
     "cover": "public/images/chaussettes_bleues.webp",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": [],
+      "gender": [],
+      "set": []
+    }
   },
   {
     "id": "7",
     "name": "Pull gris",
     "descriptionShort": "Gris comme la pluit.",
     "cover": "public/images/pull_gris.webp",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": [],
+      "gender": [],
+      "set": []
+    }
   },
   {
     "id": "8",
     "name": "Chale rouge",
     "descriptionShort": "La mère noël l'adore",
     "cover": "public/images/chale_rouge.jpg",
-    "favoris": true
+    "favoris": true,
+    "categories": {
+      "types": [],
+      "gender": [],
+      "set": []
+    }
   }
 ]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "type",
+    "title": "Type",
+    "content": [
+      {
+        "value": "all",
+        "text": "Tout"
+      },
+      {
+        "value": "pull",
+        "text": "Pull"
+      },
+      {
+        "value": "chaussettes",
+        "text": "Chaussettes"
+      },
+      {
+        "value": "chale",
+        "text": "Châle"
+      }
+    ],
+    "initialValue": ""
+  },
+  {
+    "id": "gender",
+    "title": "Genre",
+    "content": [
+      {
+        "value": "all",
+        "text": "Tout"
+      },
+      {
+        "value": "child",
+        "text": "Enfants"
+      },
+      {
+        "value": "female",
+        "text": "Femmes"
+      },
+      {
+        "value": "male",
+        "text": "Hommes"
+      }
+    ],
+    "initialValue": ""
+  },
+  {
+    "id": "set",
+    "title": "Ensemble",
+    "content": [
+      {
+        "value": "none",
+        "text": "Aucun"
+      },
+      {
+        "value": "sweat&pant",
+        "text": "Pull et pantalon"
+      },
+      {
+        "value": "chale&socks",
+        "text": "Châle et chaussettes"
+      }
+    ],
+    "initialValue": ""
+  }
+]

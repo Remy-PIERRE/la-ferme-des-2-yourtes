@@ -6,7 +6,9 @@ export class AllData {
   }
 
   getCategory(name) {
-    const data = JSON.parse(JSON.stringify(this[name]));
-    return data;
+    if (this[name]) {
+      const data = JSON.parse(JSON.stringify(this[name]));
+      return data;
+    }
   }
 }

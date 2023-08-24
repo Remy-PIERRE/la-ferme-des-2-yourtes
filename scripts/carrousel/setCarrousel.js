@@ -10,7 +10,7 @@ import {
 import {
   addHiddenClass,
   removeHiddenClass,
-} from "../utils/handleHtmlClasses.js";
+} from "../utils__/handleHtmlClasses.js";
 import {
   handleCarrouselPrevAnimationEnd,
   handleCarrouselNextAnimationEnd,

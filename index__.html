@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header>
-      <!-- HEADER - DESK -->
-      <div class="header__wrapper__desk">
+    <!-- HEADER - DESK -->
+    <header class="header__desk">
+      <div class="header__wrapper">
         <div class="header__logo">
           <img src="https://dummyimage.com/100x100" class="cover" />
         </div>
 
         <nav class="nav__pages">
-          <div class="nav__pages__link home">
+          <div class="nav__pages__link active">
             <a>ACCUEIL</a>
           </div>
-          <div class="nav__pages__link store">
-            <a>BOUTIQUE</a>
+          <div class="nav__pages__link">
+            <a href="./boutique.html">BOUTIQUE</a>
           </div>
-          <div class="nav__pages__link about">
-            <a>&Agrave; PROPOS</a>
+          <div class="nav__pages__link">
+            <a href="./a-propos.html">&Agrave; PROPOS</a>
           </div>
         </nav>
 
@@ -35,10 +35,12 @@
           </div>
         </nav>
       </div>
-      <!-- HEADER - DESK - END -->
+    </header>
+    <!-- HEADER - DESK - END -->
 
-      <!-- HEADER - MOB -->
-      <div class="header__wrapper__mobile">
+    <!-- HEADER - MOB -->
+    <header class="header__mobile">
+      <div class="header__wrapper">
         <div class="header__logo">
           <img src="https://dummyimage.com/100x100" class="cover" />
         </div>
@@ -47,39 +49,37 @@
           <img src="https://dummyimage.com/25x25" class="cover" />
         </div>
       </div>
-      <!-- HEADER - MOB - END -->
-
-      <!-- MENU MOBILE -->
-      <section class="menu__mobile">
-        <div class="menu__mobile__cross">
-          <img src="https://dummyimage.com/25x25" class="cover" />
-        </div>
-
-        <div class="menu__mobile__wrapper">
-          <nav class="nav__pages">
-            <div class="nav__pages__link home">
-              <a>ACCUEIL</a>
-            </div>
-            <div class="nav__pages__link store">
-              <a>BOUTIQUE</a>
-            </div>
-            <div class="nav__pages__link about">
-              <a>&Agrave; PROPOS</a>
-            </div>
-          </nav>
-
-          <nav class="nav__user">
-            <div class="nav__user__link">
-              <img src="https://dummyimage.com/50x50" class="cover" />
-            </div>
-            <div class="nav__user__link">
-              <img src="https://dummyimage.com/50x50" class="cover" />
-            </div>
-          </nav>
-        </div>
-      </section>
-      <!-- MENU MOBILE - END -->
     </header>
+
+    <section class="menu__mobile">
+      <div class="menu__mobile__cross">
+        <img src="https://dummyimage.com/25x25" class="cover" />
+      </div>
+
+      <div class="menu__mobile__wrapper">
+        <nav class="nav__pages">
+          <div class="nav__pages__link active">
+            <a>ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link">
+            <a href="./boutique.html">BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link">
+            <a href="./a-propos.html">&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <nav class="nav__user">
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+          <div class="nav__user__link">
+            <img src="https://dummyimage.com/50x50" class="cover" />
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- HEADER - MOB - END -->
 
     <main>
       <section class="page__title">
@@ -246,14 +246,14 @@
         </nav>
 
         <nav class="footer__nav__pages">
-          <div class="nav__pages__link home">
+          <div class="nav__pages__link">
             <a>ACCUEIL</a>
           </div>
-          <div class="nav__pages__link store">
-            <a>BOUTIQUE</a>
+          <div class="nav__pages__link">
+            <a href=".boutique.html">BOUTIQUE</a>
           </div>
-          <div class="nav__pages__link about">
-            <a>&Agrave; PROPOS</a>
+          <div class="nav__pages__link">
+            <a href=".a-propos.html">&Agrave; PROPOS</a>
           </div>
         </nav>
 

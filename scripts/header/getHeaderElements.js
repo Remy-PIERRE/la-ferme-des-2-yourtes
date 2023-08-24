@@ -1,14 +1,27 @@
-export const getMenuMobileContainer = () => {
-  const container = document.querySelector(".menu__mobile");
-  return container;
+export const getHeader = () => {
+  const header = document.querySelector("header");
+  return header;
 };
 
-export const getMenuMobileButton = () => {
-  const button = document.querySelector(".header__menu__button");
+export const getHeaderLinksList = () => {
+  const header = document.querySelector("header");
+  const linksList = [...header.querySelectorAll(".nav__pages__link")];
+  return linksList;
+};
+
+export const getHeaderMenuMobile = () => {
+  const menu = document.querySelector(".menu__mobile");
+  return menu;
+};
+
+export const getHeaderMenuMobileButton = () => {
+  const header = getHeader();
+  const button = header.querySelector(".header__menu__button");
   return button;
 };
 
-export const getMenuMobileCross = () => {
-  const cross = document.querySelector(".menu__mobile__cross");
+export const getHeaderMenuMobileCross = () => {
+  const menu = getHeaderMenuMobile();
+  const cross = menu.querySelector(".menu__mobile__cross");
   return cross;
 };
