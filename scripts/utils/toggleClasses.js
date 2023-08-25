@@ -17,3 +17,15 @@ export const removedOpenClass = (element) => {
     element.classList.toggle("open");
   }
 };
+
+export const addHiddenClass = (element) => {
+  if (!hasClass(element, "hidden")) {
+    element.classList.toggle("hidden");
+  }
+};
+
+export const removeHiddenClass = (element) => {
+  if (hasClass(element, "hidden")) {
+    element.classList.toggle("hidden");
+  }
+};

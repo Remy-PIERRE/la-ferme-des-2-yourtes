@@ -10,11 +10,7 @@ import {
 import {
   addHiddenClass,
   removeHiddenClass,
-} from "../utils__/handleHtmlClasses.js";
-import {
-  handleCarrouselPrevAnimationEnd,
-  handleCarrouselNextAnimationEnd,
-} from "./handleCarrouselAnimations.js";
+} from "../../utils/toggleClasses.js";
 
 export const setCarrouselContainer = (index) => {
   const container = getCarrouselContainer();
@@ -54,18 +50,6 @@ export const setCarrouselSectionCta = (template, config) => {
 export const resetCarrouselContainerAnimation = () => {
   const container = getCarrouselContainer();
   container.style.animation = "";
-};
-
-export const resetCarrouselContainerListeners = () => {
-  const container = getCarrouselContainer();
-  container.removeEventListener(
-    "animationend",
-    handleCarrouselPrevAnimationEnd
-  );
-  container.removeEventListener(
-    "animationend",
-    handleCarrouselNextAnimationEnd
-  );
 };
 
 export const resetCarrouselSections = () => {

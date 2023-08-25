@@ -5,10 +5,10 @@ import {
 } from "./getCarrouselInfo.js";
 import {
   resetCarrouselContainerAnimation,
-  resetCarrouselContainerListeners,
   resetCarrouselSections,
   setCarrouselSection,
-} from "./setCarrousel.js";
+} from "./setCarrouselElements.js";
+import { resetCarrouselContainerListeners } from "./handleCarrouselEvents.js";
 
 export const displayCarrouselCurrentSections = () => {
   resetCarrouselContainerAnimation();

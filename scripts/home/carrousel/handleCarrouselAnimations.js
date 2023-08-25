@@ -3,7 +3,7 @@ import {
   getCarrouselNextIndex,
   getCarrouselPrevIndex,
 } from "./getCarrouselInfo.js";
-import { setCarrouselContainer } from "./setCarrousel.js";
+import { setCarrouselContainer } from "./setCarrouselElements.js";
 import { displayCarrouselCurrentSections } from "./displayCarrouselSections.js";
 
 /* SETTINGS */

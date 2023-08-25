@@ -1,15 +1,15 @@
-import { insertElement } from "../utils__/insertElements.js";
 import {
   getCarrouselContainer,
   getCarrouselSectionTemplate,
 } from "./getCarrouselElements.js";
 import {
-  setCarrouselSectionWrapper,
+  setCarrouselSectionCta,
+  setCarrouselSectionDescription,
   setCarrouselSectionImage,
   setCarrouselSectionTitle,
-  setCarrouselSectionDescription,
-  setCarrouselSectionCta,
-} from "./setCarrousel.js";
+  setCarrouselSectionWrapper,
+} from "./setCarrouselElements.js";
+import { insertElement } from "../../utils/insertElements.js";
 
 export const createCarrouselSection = (data, index) => {
   const { id, title, description, cta, imageUrl } = data;

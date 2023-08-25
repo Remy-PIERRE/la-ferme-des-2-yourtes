@@ -1,10 +1,10 @@
 [
   {
     "id": "1",
-    "name": "Bonnet bleu",
+    "title": "Bonnet bleu",
     "descriptionShort": "C'est un joli bonnet couleur azure",
     "cover": "public/images/bonnet_bleu.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": ["bonnet"],
       "gender": ["all"],
@@ -13,10 +13,10 @@
   },
   {
     "id": "2",
-    "name": "Bonnet blanc",
+    "title": "Bonnet blanc",
     "descriptionShort": "Magnifique modele de bonnet blanc",
     "cover": "public/images/bonnet_blanc.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": ["bonnet"],
       "gender": ["female"],
@@ -25,10 +25,10 @@
   },
   {
     "id": "3",
-    "name": "Pull mariniere",
+    "title": "Pull mariniere",
     "descriptionShort": "&Agrave; la mode bretonne",
     "cover": "public/images/pull_mariniere.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": ["sweater"],
       "gender": ["all"],
@@ -37,10 +37,10 @@
   },
   {
     "id": "4",
-    "name": "Chale noir",
+    "title": "Chale noir",
     "descriptionShort": "Discretion de nuit assurée",
     "cover": "public/images/chale_noir.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": ["shawl"],
       "gender": ["female"],
@@ -49,10 +49,10 @@
   },
   {
     "id": "5",
-    "name": "Chassettes grises",
+    "title": "Chassettes grises",
     "descriptionShort": "Les pieds au chaud",
     "cover": "public/images/chaussettes_grises.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": [],
       "gender": [],
@@ -61,10 +61,10 @@
   },
   {
     "id": "6",
-    "name": "Chassettes rouges",
+    "title": "Chassettes rouges",
     "descriptionShort": "Sous l'océaaaaan",
     "cover": "public/images/chaussettes_bleues.webp",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": [],
       "gender": [],
@@ -73,10 +73,10 @@
   },
   {
     "id": "7",
-    "name": "Pull gris",
+    "title": "Pull gris",
     "descriptionShort": "Gris comme la pluit.",
     "cover": "public/images/pull_gris.webp",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": [],
       "gender": [],
@@ -85,10 +85,10 @@
   },
   {
     "id": "8",
-    "name": "Chale rouge",
+    "title": "Chale rouge",
     "descriptionShort": "La mère noël l'adore",
     "cover": "public/images/chale_rouge.jpg",
-    "favoris": true,
+    "homePage": true,
     "categories": {
       "types": [],
       "gender": [],
