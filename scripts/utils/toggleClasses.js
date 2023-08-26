@@ -12,10 +12,14 @@ export const addOpenClass = (element) => {
   }
 };
 
-export const removedOpenClass = (element) => {
+export const removeOpenClass = (element) => {
   if (hasClass(element, "open")) {
     element.classList.toggle("open");
   }
+};
+
+export const toggleOpenClass = (element) => {
+  element.classList.toggle("open");
 };
 
 export const addHiddenClass = (element) => {

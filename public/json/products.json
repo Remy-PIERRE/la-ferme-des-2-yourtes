@@ -6,8 +6,8 @@
     "cover": "public/images/bonnet_bleu.jpg",
     "homePage": true,
     "categories": {
-      "types": ["bonnet"],
-      "gender": ["all"],
+      "type": ["bonnet"],
+      "gender": [],
       "set": []
     }
   },
@@ -18,8 +18,8 @@
     "cover": "public/images/bonnet_blanc.jpg",
     "homePage": true,
     "categories": {
-      "types": ["bonnet"],
-      "gender": ["female"],
+      "type": ["bonnet"],
+      "gender": ["femme"],
       "set": []
     }
   },
@@ -30,8 +30,8 @@
     "cover": "public/images/pull_mariniere.jpg",
     "homePage": true,
     "categories": {
-      "types": ["sweater"],
-      "gender": ["all"],
+      "type": ["pull"],
+      "gender": [],
       "set": []
     }
   },
@@ -42,31 +42,31 @@
     "cover": "public/images/chale_noir.jpg",
     "homePage": true,
     "categories": {
-      "types": ["shawl"],
-      "gender": ["female"],
+      "type": ["chale"],
+      "gender": ["homme"],
       "set": []
     }
   },
   {
     "id": "5",
-    "title": "Chassettes grises",
+    "title": "Chaussettes grises",
     "descriptionShort": "Les pieds au chaud",
     "cover": "public/images/chaussettes_grises.jpg",
     "homePage": true,
     "categories": {
-      "types": [],
+      "type": [],
       "gender": [],
       "set": []
     }
   },
   {
     "id": "6",
-    "title": "Chassettes rouges",
+    "title": "Chaussettes rouges",
     "descriptionShort": "Sous l'océaaaaan",
     "cover": "public/images/chaussettes_bleues.webp",
-    "homePage": true,
+    "homePage": false,
     "categories": {
-      "types": [],
+      "type": [],
       "gender": [],
       "set": []
     }
@@ -78,8 +78,8 @@
     "cover": "public/images/pull_gris.webp",
     "homePage": true,
     "categories": {
-      "types": [],
-      "gender": [],
+      "type": ["pull"],
+      "gender": ["enfant"],
       "set": []
     }
   },
@@ -90,7 +90,7 @@
     "cover": "public/images/chale_rouge.jpg",
     "homePage": true,
     "categories": {
-      "types": [],
+      "type": [],
       "gender": [],
       "set": []
     }

@@ -7,4 +7,8 @@ export const dataConfig = [
     fileName: "carrousel",
     storageName: "carrousel",
   },
+  {
+    fileName: "productsCategories",
+    storageName: "productsCategories",
+  },
 ];

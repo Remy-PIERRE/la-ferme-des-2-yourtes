@@ -1,4 +1,8 @@
-import { getPrevWindowMedia, getWindowMedia } from "./windowMedia.js";
+import {
+  getPrevWindowMedia,
+  getWindowMedia,
+  setPrevWindowMedia,
+} from "./windowMedia.js";
 import { runWindowResizeCallbacks } from "./windowResizeCallbacks.js";
 
 export const handleWindowResizeEvent = () => {
@@ -6,6 +10,7 @@ export const handleWindowResizeEvent = () => {
   const currentWindowMedia = getWindowMedia();
 
   if (prevWindowMedia !== currentWindowMedia) {
+    setPrevWindowMedia();
     runWindowResizeCallbacks();
   }
 };

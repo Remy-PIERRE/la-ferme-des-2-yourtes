@@ -20,6 +20,10 @@ const initPage = async () => {
   console.log("init data");
   await initData();
   console.log("data => products: ", getDataCategory("products"));
+  console.log(
+    "data => productsCategories: ",
+    getDataCategory("productsCategories")
+  );
   console.log("data => carrousel: ", getDataCategory("carrousel"));
 
   const currentPage = getCurrentPage();

@@ -3,7 +3,7 @@ import {
   getHeaderMenuMobileButton,
   getHeaderMenuMobileCross,
 } from "./getHeaderElements.js";
-import { addOpenClass, removedOpenClass } from "../utils/toggleClasses.js";
+import { addOpenClass, removeOpenClass } from "../utils/toggleClasses.js";
 
 export const initHeaderMenuMobile = () => {
   handleHeaderMenuMobileEvents();
@@ -26,5 +26,5 @@ const handleMenuMobileButtonClick = () => {
 
 const handleHeaderMenuMobileCrossClick = () => {
   const menu = getHeaderMenuMobile();
-  removedOpenClass(menu);
+  removeOpenClass(menu);
 };

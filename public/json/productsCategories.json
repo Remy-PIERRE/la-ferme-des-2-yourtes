@@ -4,10 +4,6 @@
     "title": "Type",
     "content": [
       {
-        "value": "all",
-        "text": "Tout"
-      },
-      {
         "value": "pull",
         "text": "Pull"
       },
@@ -27,19 +23,15 @@
     "title": "Genre",
     "content": [
       {
-        "value": "all",
-        "text": "Tout"
-      },
-      {
-        "value": "child",
+        "value": "enfant",
         "text": "Enfants"
       },
       {
-        "value": "female",
+        "value": "femme",
         "text": "Femmes"
       },
       {
-        "value": "male",
+        "value": "homme",
         "text": "Hommes"
       }
     ],
@@ -49,10 +41,6 @@
     "id": "set",
     "title": "Ensemble",
     "content": [
-      {
-        "value": "none",
-        "text": "Aucun"
-      },
       {
         "value": "sweat&pant",
         "text": "Pull et pantalon"

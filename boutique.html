@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
-    <!-- HEADER - DESK -->
-    <header class="header__desk">
-      <div class="header__wrapper">
+    <header>
+      <!-- HEADER - DESK -->
+      <div class="header__wrapper__desk">
         <div class="header__logo">
-          <img src="https://dummyimage.com/100x100" class="cover" />
+          <img src="public/images/logo-ferme.png" class="cover" />
         </div>
 
         <nav class="nav__pages">
-          <div class="nav__pages__link">
-            <a href="./index.html">ACCUEIL</a>
+          <div class="nav__pages__link home">
+            <a>ACCUEIL</a>
           </div>
-          <div class="nav__pages__link active">
+          <div class="nav__pages__link store">
             <a>BOUTIQUE</a>
           </div>
-          <div class="nav__pages__link">
-            <a href="./a-propos.html">&Agrave; PROPOS</a>
+          <div class="nav__pages__link about">
+            <a>&Agrave; PROPOS</a>
           </div>
         </nav>
 
@@ -35,101 +35,69 @@
           </div>
         </nav>
       </div>
-    </header>
-    <!-- HEADER - DESK - END -->
+      <!-- HEADER - DESK - END -->
 
-    <!-- HEADER - MOB -->
-    <header class="header__mobile">
-      <div class="header__wrapper">
+      <!-- HEADER - MOB -->
+      <div class="header__wrapper__mobile">
         <div class="header__logo">
-          <img src="https://dummyimage.com/100x100" class="cover" />
+          <img src="public/images/logo-ferme.png" class="cover" />
         </div>
 
         <div class="header__menu__button">
-          <img src="https://dummyimage.com/25x25" class="cover" />
+          <img src="public/icons/menu.png" class="cover" />
         </div>
       </div>
+      <!-- HEADER - MOB - END -->
+
+      <!-- MENU MOBILE -->
+      <section class="menu__mobile">
+        <div class="menu__mobile__cross">
+          <img src="public/icons/cross_black.png" class="cover" />
+        </div>
+
+        <div class="menu__mobile__wrapper">
+          <nav class="nav__pages">
+            <div class="nav__pages__link home">
+              <a>ACCUEIL</a>
+            </div>
+            <div class="nav__pages__link store">
+              <a>BOUTIQUE</a>
+            </div>
+            <div class="nav__pages__link about">
+              <a>&Agrave; PROPOS</a>
+            </div>
+          </nav>
+
+          <nav class="nav__user">
+            <div class="nav__user__link">
+              <img src="https://dummyimage.com/50x50" class="cover" />
+            </div>
+            <div class="nav__user__link">
+              <img src="https://dummyimage.com/50x50" class="cover" />
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- MENU MOBILE - END -->
     </header>
-
-    <section class="menu__mobile">
-      <div class="menu__mobile__cross">
-        <img src="https://dummyimage.com/25x25" class="cover" />
-      </div>
-
-      <div class="menu__mobile__wrapper">
-        <nav class="nav__pages">
-          <div class="nav__pages__link">
-            <a href="./index.html">ACCUEIL</a>
-          </div>
-          <div class="nav__pages__link active">
-            <a>BOUTIQUE</a>
-          </div>
-          <div class="nav__pages__link">
-            <a href="./a-propos.html">&Agrave; PROPOS</a>
-          </div>
-        </nav>
-
-        <nav class="nav__user">
-          <div class="nav__user__link">
-            <img src="https://dummyimage.com/50x50" class="cover" />
-          </div>
-          <div class="nav__user__link">
-            <img src="https://dummyimage.com/50x50" class="cover" />
-          </div>
-        </nav>
-      </div>
-    </section>
-    <!-- HEADER - MOB - END -->
 
     <main>
       <section class="page__title">
         <h1>La boutique</h1>
       </section>
 
-      <section class="store__sideNav">
-        <!-- DESK -->
-        <div class="store__sideNav__wrapper__desk">
-          <div class="store__sideNav__title">
+      <section class="store__wrapper section__wrapper">
+        <section class="store__sideNav">
+          <!-- DESK -->
+          <div class="store__sideNav__wrapper__desk">
+            <!-- <div class="store__sideNav__title">
             <h2>Filtres bureau</h2>
-          </div>
+          </div> -->
 
-          <div class="store__sideNav__container">
-            <template id="sideNavCategoryTemplate">
-              <div class="sideNav__category__wrapper">
-                <div class="sideNav__category__title">
-                  <h3></h3>
-                </div>
-                <div class="sideNav__category__list"></div>
-              </div>
-            </template>
-
-            <template id="storeFilterListCheckboxTemplate">
-              <div class="store__filterList__wrapper">
-                <input type="checkbox" />
-                <label></label>
-              </div>
-            </template>
-
-            <template id="sideNavCategoryOptionTemplate">
-              <div class="store__filterList__wrapper">
-                <input type="radio" />
-                <label></label>
-              </div>
-            </template>
-          </div>
-        </div>
-        <!-- DESK - END -->
-
-        <!-- MOBILE -->
-        <div class="store__sideNav__wrapper__mobile">
-          <div>
-            <div class="store__sideNav__title">
-              <h2>Filtres mobile</h2>
-            </div>
-
-            <div class="sideNav__cross">
+            <form class="store__searchInput desk">
+              <input type="input" />
               <img src="https://dummyimage.com/25x25" />
-            </div>
+            </form>
 
             <div class="store__sideNav__container">
               <template id="sideNavCategoryTemplate">
@@ -141,60 +109,131 @@
                 </div>
               </template>
 
-              <template id="sideNavCategoryOptionTemplate">
-                <div class="sideNav__category__option__wrapper">
+              <template id="storeFilterListCheckboxTemplate">
+                <div class="store__filterList__wrapper">
                   <input type="checkbox" />
+                  <label></label>
+                </div>
+              </template>
+
+              <template id="sideNavCategoryOptionTemplate">
+                <div class="store__filterList__wrapper">
+                  <input type="radio" />
                   <label></label>
                 </div>
               </template>
             </div>
           </div>
-        </div>
-        <!-- MOBILE -END -->
-      </section>
+          <!-- DESK - END -->
 
-      <section class="store__gallery">
-        <div class="store__gallery__wrapper">
-          <div class="store__gallery__resume"></div>
-          <div class="store__gallery__products__container"></div>
-          <div class="store__gallery__pages"></div>
-        </div>
-      </section>
-
-      <footer>
-        <div class="footer__wrapper section__wrapper">
-          <nav class="footer__social">
-            <div class="footer__social__link">
-              <img src="https://dummyimage.com/50x50" />
-            </div>
-            <div class="footer__social__link">
-              <img src="https://dummyimage.com/50x50" />
-            </div>
-          </nav>
-
-          <nav class="footer__nav__pages">
-            <div class="nav__pages__link">
-              <a href="./index.html">ACCUEIL</a>
-            </div>
-            <div class="nav__pages__link">
-              <a>BOUTIQUE</a>
-            </div>
-            <div class="nav__pages__link">
-              <a href="./a-propos.html">&Agrave; PROPOS</a>
-            </div>
-          </nav>
-
-          <div class="footer__banner__bottom">
+          <!-- MOBILE -->
+          <div class="store__sideNav__wrapper__mobile">
             <div>
-              <a>Mentions légales</a>
-            </div>
-            <div>
-              <p>Tous droits réservés - 2023</p>
+              <!-- <div class="store__sideNav__title">
+              <h2>Filtres</h2>
+            </div> -->
+
+              <div class="store__sideNav__menu__cross">
+                <img src="public/icons/cross_black.png" class="contain" />
+              </div>
+
+              <div class="store__resultCount sideNav">
+                <p><span>0</span> résultats</p>
+              </div>
+
+              <form class="store__searchInput">
+                <input type="input" placeholder="rechercher" />
+                <img src="public/icons/cross_black.png" />
+              </form>
+
+              <div class="store__sideNav__container">
+                <template id="sideNavCategoryTemplate">
+                  <div class="sideNav__category__wrapper">
+                    <div class="sideNav__category__title">
+                      <h3></h3>
+                    </div>
+                    <div class="sideNav__category__list"></div>
+                  </div>
+                </template>
+
+                <template id="sideNavCategoryOptionTemplate">
+                  <div class="sideNav__category__option__wrapper">
+                    <input type="checkbox" />
+                    <label></label>
+                  </div>
+                </template>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+          <!-- MOBILE -END -->
+        </section>
+
+        <section class="store__gallery">
+          <div class="store__sideNav__menu__button">
+            <img src="public/icons/search.png" class="cover" />
+          </div>
+
+          <div class="store__gallery__wrapper">
+            <div class="store__resultCount">
+              <p><span>0</span> résultats</p>
+            </div>
+
+            <div class="store__gallery__products__container">
+              <!-- TEMPLATE - GALLERY CARD -->
+              <template id="galleryCardTemplate">
+                <a class="gallery__card__wrapper">
+                  <div class="gallery__card__image">
+                    <img class="contain" />
+                  </div>
+
+                  <div class="gallery__card__content">
+                    <h3></h3>
+                    <p></p>
+                  </div>
+                </a>
+              </template>
+              <!-- TEMPLATE - GALLERY CARD - END -->
+            </div>
+
+            <div class="store__gallery__pages"></div>
+          </div>
+        </section>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer__wrapper section__wrapper">
+        <nav class="footer__social">
+          <div class="footer__social__link">
+            <img src="https://dummyimage.com/50x50" />
+          </div>
+          <div class="footer__social__link">
+            <img src="https://dummyimage.com/50x50" />
+          </div>
+        </nav>
+
+        <nav class="footer__nav__pages">
+          <div class="nav__pages__link home">
+            <a>ACCUEIL</a>
+          </div>
+          <div class="nav__pages__link store">
+            <a>BOUTIQUE</a>
+          </div>
+          <div class="nav__pages__link about">
+            <a>&Agrave; PROPOS</a>
+          </div>
+        </nav>
+
+        <div class="footer__banner__bottom">
+          <div>
+            <a>Mentions légales</a>
+          </div>
+          <div>
+            <p>Tous droits réservés - 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="../scripts/main.js"></script>
   </body>
