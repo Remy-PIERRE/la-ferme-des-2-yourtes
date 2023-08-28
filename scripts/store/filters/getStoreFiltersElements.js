@@ -114,3 +114,23 @@ export const getStoreFiltersSubCategoriesInputsList = () => {
   ];
   return list;
 };
+
+export const getStoreFiltersSearchInputs = () => {
+  const inputs = [...document.querySelectorAll(".store__searchInput input")];
+  return inputs;
+};
+
+export const getStoreFiltersSearchCrosses = () => {
+  const crosses = [...document.querySelectorAll(".store__searchInput img")];
+  return crosses;
+};
+
+export const getStoreFiltersSearchInput = () => {
+  const input = document.querySelector(".store__searchInput input");
+  return input;
+};
+
+export const getStoreFiltersResetButtons = () => {
+  const buttons = [...document.querySelectorAll(".store__filters__reset")];
+  return buttons;
+};

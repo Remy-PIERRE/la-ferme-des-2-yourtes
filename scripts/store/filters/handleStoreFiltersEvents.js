@@ -4,10 +4,12 @@ import {
   getStoreFiltersMenuButton,
   getStoreFiltersMenuCross,
   getStoreFiltersCategoriesList,
-  // getStoreFiltersSubCategoriesList,
   getStoreFiltersCategoryWrapperByChild,
   getStoreFiltersCategoryListByWrapper,
   getStoreFiltersSubCategoriesInputsList,
+  getStoreFiltersSearchInputs,
+  getStoreFiltersSearchCrosses,
+  getStoreFiltersResetButtons,
 } from "./getStoreFiltersElements.js";
 import {
   addOpenClass,
@@ -23,8 +25,8 @@ export const handleStoreFiltersEvents = () => {
     const button = getStoreFiltersMenuButton();
     button.addEventListener("click", handleStoreFilterMenuButtonClick);
 
-    const cross = getStoreFiltersMenuCross();
-    cross.addEventListener("click", handleStoreFiltersMenuCrossClick);
+    const menuCross = getStoreFiltersMenuCross();
+    menuCross.addEventListener("click", handleStoreFiltersMenuCrossClick);
 
     const categoriesList = getStoreFiltersCategoriesList();
     for (const category of categoriesList) {
@@ -32,14 +34,25 @@ export const handleStoreFiltersEvents = () => {
     }
   }
 
-  // const subCategorieslist = getStoreFiltersSubCategoriesList();
-  // for (const subCategory of subCategorieslist) {
-  //   subCategory.addEventListener("click", handleStoreFiltersSubCategoryClick);
-  // }
-
   const subCategoriesInputsList = getStoreFiltersSubCategoriesInputsList();
   for (const input of subCategoriesInputsList) {
     input.addEventListener("change", handleStoreFiltersSubCategoryInputChange);
+  }
+
+  const searchInputs = getStoreFiltersSearchInputs();
+  for (const input of searchInputs) {
+    input.addEventListener("input", handleStoreFiltersSearchInputInput);
+    input.addEventListener("keydown", handleStoreFiltersSearchInputKeyDown);
+  }
+
+  const searchCrosses = getStoreFiltersSearchCrosses();
+  for (const searchCross of searchCrosses) {
+    searchCross.addEventListener("click", handleStoreFiltersSearchCrossClick);
+  }
+
+  const resetButtons = getStoreFiltersResetButtons();
+  for (const reset of resetButtons) {
+    reset.addEventListener("click", handleStoreFiltersResetClick);
   }
 };
 
@@ -64,8 +77,44 @@ const handleStoreFiltersCategoryClick = (event) => {
   }
 };
 
-// const handleStoreFiltersSubCategoryClick = () => {};
-
 const handleStoreFiltersSubCategoryInputChange = () => {
+  initSearch();
+};
+
+const handleStoreFiltersSearchInputInput = (event) => {
+  const inputsList = getStoreFiltersSearchInputs();
+  const value = event.target.value;
+
+  for (const input of inputsList) {
+    input.value = value;
+  }
+  initSearch();
+};
+
+const handleStoreFiltersSearchInputKeyDown = (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+  }
+};
+
+const handleStoreFiltersSearchCrossClick = () => {
+  const inputsList = getStoreFiltersSearchInputs();
+  for (const input of inputsList) {
+    input.value = "";
+  }
+  initSearch();
+};
+
+const handleStoreFiltersResetClick = () => {
+  const searchInputs = getStoreFiltersSearchInputs();
+  for (const input of searchInputs) {
+    input.value = "";
+  }
+
+  const subCategoriesInputsList = getStoreFiltersSubCategoriesInputsList();
+  for (const input of subCategoriesInputsList) {
+    input.checked = false;
+  }
+
   initSearch();
 };

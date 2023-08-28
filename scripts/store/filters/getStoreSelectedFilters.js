@@ -1,5 +1,8 @@
 import { getDataCategory } from "../../data/dataInstance.js";
-import { getStoreFiltersSubCategoriesInputsListByCategoryId } from "./getStoreFiltersElements.js";
+import {
+  getStoreFiltersSearchInput,
+  getStoreFiltersSubCategoriesInputsListByCategoryId,
+} from "./getStoreFiltersElements.js";
 
 export const getStoreSelectedFilters = () => {
   const dataCategories = getDataCategory("productsCategories");
@@ -21,6 +24,12 @@ export const getStoreSelectedFilters = () => {
         selectedFilters[id].push(input.value);
       }
     }
+  }
+
+  const searchInput = getStoreFiltersSearchInput();
+  const value = searchInput.value;
+  if (value !== "") {
+    selectedFilters["input"] = value;
   }
 
   return selectedFilters;

@@ -57,6 +57,16 @@ body {
   background: crimson;
 }
 
+.btn__reset {
+  height: 36px;
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 100px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: blue;
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -1001,6 +1011,12 @@ footer {
   font-weight: bold;
 }
 
+.store__filters__reset {
+  width: fit-content;
+  padding-left: 20px;
+  margin-bottom: 32px;
+}
+
 .store__searchInput {
   width: 300px;
   position: relative;
@@ -1092,6 +1108,11 @@ footer {
   .store__searchInput.desk {
     width: 250px;
     padding: 0;
+  }
+
+  .store__filters__reset {
+    padding-left: 0;
+    margin-bottom: 32px;
   }
 
   .sideNav__category__title h3 {
