@@ -11,3 +11,8 @@ export const getDataFromStorage = (name) => {
 export const setDataStorage = (name, data) => {
   window.localStorage.setItem(name, JSON.stringify(data));
 };
+
+export const getProductId = () => {
+  const id = window.localStorage.getItem("currentProduct");
+  return id;
+};

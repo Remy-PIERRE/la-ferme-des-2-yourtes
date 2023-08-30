@@ -6,9 +6,10 @@ import { getCurrentPage } from "./page/getCurrentPage.js";
 import { initHome } from "./home/initHome.js";
 import { initStore } from "./store/initStore.js";
 import { getDataCategory } from "./data/dataInstance.js";
+import { initProduct } from "./product/initProduct.js";
 
 const initPage = async () => {
-  console.log("init page");
+  console.log("init page: ", getCurrentPage());
 
   console.log("init header");
   initHeader();
@@ -35,7 +36,11 @@ const initPage = async () => {
     console.log("init store");
     initStore();
   }
+  if (currentPage === "product") {
+    console.log("init product");
+    initProduct();
+  }
 };
 
-localStorage.clear();
+// localStorage.clear();
 initPage();

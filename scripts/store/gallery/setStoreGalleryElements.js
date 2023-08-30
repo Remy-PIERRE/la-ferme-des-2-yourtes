@@ -1,12 +1,12 @@
-import { getElementAnchor } from "../../utils/getElements.js";
 import {
+  getStoreGalleryCardWrapper,
   getStoreGalleryCardDescription,
   getStoreGalleryCardImage,
   getStoreGalleryCardTitle,
 } from "./getStoreGalleryElements.js";
 
 export const setStoreGalleryCardAnchor = (template, id) => {
-  const anchor = getElementAnchor(template);
+  const anchor = getStoreGalleryCardWrapper(template);
   anchor.id = id;
 };
 

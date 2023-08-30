@@ -5,9 +5,10 @@ import {
   getHomeGalleryCardDescription,
 } from "./getHomeGalleryElements.js";
 
-export const setHomeGalleryCardWrapper = (template, id) => {
+export const setHomeGalleryCardWrapper = (template, id, href) => {
   const wrapper = getHomeGalleryCardWrapper(template);
   wrapper.id = id;
+  wrapper.href = `/produit/${href}`;
 };
 
 export const setHomeGalleryCardImage = (template, src, alt) => {

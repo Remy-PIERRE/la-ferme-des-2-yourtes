@@ -11,6 +11,9 @@ export const getCurrentPage = () => {
   if (currentLocation === "/a-propos.html") {
     currentPage = "about";
   }
+  if (currentLocation.indexOf("/produit") > -1) {
+    currentPage = "product";
+  }
 
   return currentPage;
 };

@@ -4,6 +4,7 @@
     "title": "Bonnet bleu",
     "descriptionShort": "C'est un joli bonnet couleur azure",
     "cover": "public/images/bonnet_bleu.jpg",
+    "images": ["sheep_1.webp", "sheep_2.jpg", "sheep_3.jpg", "sheep_4.webp"],
     "homePage": true,
     "categories": {
       "type": ["bonnet"],
@@ -16,6 +17,7 @@
     "title": "Bonnet blanc",
     "descriptionShort": "Magnifique modele de bonnet blanc",
     "cover": "public/images/bonnet_blanc.jpg",
+    "images": ["sheep_1.webp", "sheep_2.jpg", "sheep_3.jpg", "sheep_4.webp"],
     "homePage": true,
     "categories": {
       "type": ["bonnet"],
@@ -28,6 +30,7 @@
     "title": "Pull mariniere",
     "descriptionShort": "&Agrave; la mode bretonne",
     "cover": "public/images/pull_mariniere.jpg",
+    "images": ["sheep_1.webp", "sheep_2.jpg", "sheep_3.jpg", "sheep_4.webp"],
     "homePage": true,
     "categories": {
       "type": ["pull"],
@@ -40,6 +43,12 @@
     "title": "Chale noir",
     "descriptionShort": "Discretion de nuit assurée",
     "cover": "public/images/chale_noir.jpg",
+    "images": [
+      "public/images/sheep_1.webp",
+      "public/images/sheep_2.jpg",
+      "public/images/sheep_3.jpg",
+      "public/images/sheep_4.webp"
+    ],
     "homePage": true,
     "categories": {
       "type": ["chale"],
@@ -51,19 +60,33 @@
     "id": "5",
     "title": "Chaussettes grises",
     "descriptionShort": "Les pieds au chaud",
+    "descriptionLong": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate nisi amet quos molestiae reprehenderit adipisci libero mollitia doloremque, cumque dolor blanditiis, illum consectetur dolore officiis quis quaerat debitis. Sunt unde necessitatibus repellat repudiandae quaerat sint! Aliquam vitae necessitatibus dignissimos, nemo facilis veritatis, voluptate consequuntur facere et ipsum nisi, doloremque iste?",
     "cover": "public/images/chaussettes_grises.jpg",
+    "images": [
+      "public/images/sheep_1.webp",
+      "public/images/sheep_2.jpg",
+      "public/images/sheep_3.jpg",
+      "public/images/sheep_4.webp"
+    ],
     "homePage": true,
     "categories": {
       "type": [],
       "gender": [],
       "set": []
-    }
+    },
+    "url": "chaussettes-grises"
   },
   {
     "id": "6",
     "title": "Chaussettes rouges",
     "descriptionShort": "Sous l'océaaaaan",
     "cover": "public/images/chaussettes_bleues.webp",
+    "images": [
+      "public/images/sheep_1.webp",
+      "public/images/sheep_2.jpg",
+      "public/images/sheep_3.jpg",
+      "public/images/sheep_4.webp"
+    ],
     "homePage": false,
     "categories": {
       "type": [],
@@ -76,6 +99,12 @@
     "title": "Pull gris",
     "descriptionShort": "Gris comme la pluit.",
     "cover": "public/images/pull_gris.webp",
+    "images": [
+      "public/images/sheep_1.webp",
+      "public/images/sheep_2.jpg",
+      "public/images/sheep_3.jpg",
+      "public/images/sheep_4.webp"
+    ],
     "homePage": true,
     "categories": {
       "type": ["pull"],
@@ -88,6 +117,12 @@
     "title": "Chale rouge",
     "descriptionShort": "La mère noël l'adore",
     "cover": "public/images/chale_rouge.jpg",
+    "images": [
+      "public/images/sheep_1.webp",
+      "public/images/sheep_2.jpg",
+      "public/images/sheep_3.jpg",
+      "public/images/sheep_4.webp"
+    ],
     "homePage": true,
     "categories": {
       "type": [],
