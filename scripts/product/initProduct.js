@@ -6,9 +6,6 @@ import { createProductPage } from "./createProductPage.js";
 export const initProduct = () => {
   const productId = getProductId();
 
-  /* TODO - find solution for reloading page with modified url */
-  // setCurrentHref(productId);
-
   const dataProduct = getProductById(productId);
   console.log("current product: ", dataProduct);
   createProductPage(dataProduct);

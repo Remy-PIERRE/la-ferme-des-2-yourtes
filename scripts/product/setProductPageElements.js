@@ -2,7 +2,7 @@ import { insertElement } from "../utils/insertElements.js";
 import {
   getProductPageCarrouselImagesContainer,
   getProductPageCarrouselMiniSections,
-  getProductPageCarrouselSection,
+  getProductPageDescriptionLong,
   getProductPageDescriptionShort,
   getProductPageTitle,
 } from "./getProductPageElements.js";
@@ -31,4 +31,9 @@ const createAndSetProductPageCarrouselImage = (src) => {
   const element = document.createElement("img");
   element.src = src;
   return element;
+};
+
+export const setProductPageDescriptionLong = (template, text) => {
+  const description = getProductPageDescriptionLong(template);
+  description.innerHTML = `${text}`;
 };

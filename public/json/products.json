@@ -3,6 +3,7 @@
     "id": "1",
     "title": "Bonnet bleu",
     "descriptionShort": "C'est un joli bonnet couleur azure",
+    "descriptionLong": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, ab error! Iste alias sit repudiandae laborum veritatis perspiciatis non officiis rerum voluptatum assumenda. Fugiat minima maiores ipsum aut enim rerum modi ab cumque necessitatibus natus tempore, obcaecati dolorem! Molestiae libero eaque atque nostrum est architecto accusantium ratione, aut illum laudantium excepturi similique, quod aliquam rem quo eum ipsum odit corrupti molestias ipsa fuga? Perspiciatis aspernatur maiores quibusdam quam expedita id odit quae omnis molestias, deleniti repudiandae labore voluptas dolorum ea obcaecati, explicabo autem saepe esse odio sequi excepturi! Incidunt neque commodi totam illum obcaecati itaque tempore eligendi beatae natus sunt?",
     "cover": "public/images/bonnet_bleu.jpg",
     "images": ["sheep_1.webp", "sheep_2.jpg", "sheep_3.jpg", "sheep_4.webp"],
     "homePage": true,
