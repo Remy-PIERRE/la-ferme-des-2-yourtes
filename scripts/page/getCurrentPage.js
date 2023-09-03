@@ -1,5 +1,6 @@
 export const getCurrentPage = () => {
   const currentLocation = window.location.pathname;
+  console.log("location: ", window.location);
 
   let currentPage;
   if (currentLocation === "/") {

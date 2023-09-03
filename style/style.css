@@ -451,6 +451,15 @@ main {
   justify-content: space-between;
 }
 
+.carrousel__buttons img {
+  width: 20px;
+  height: 20px;
+}
+
+.carrousel__buttons img:first-child {
+  transform: rotate(180deg);
+}
+
 .carrousel__sections__container {
   width: fit-content;
   height: 100%;
@@ -535,6 +544,11 @@ main {
 @media (min-width: 769px) {
   .carrousel__wrapper {
     aspect-ratio: 2 / 1;
+  }
+
+  .carrousel__buttons img {
+    width: 30px;
+    height: 30px;
   }
 
   .carrousel__sections__container {

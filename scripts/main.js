@@ -42,5 +42,5 @@ const initPage = async () => {
   }
 };
 
-localStorage.clear();
+// localStorage.clear();
 initPage();
