@@ -12,7 +12,7 @@ export const setStoreGalleryCardAnchor = (template, id) => {
 
 export const setStoreGalleryCardCover = (template, src, alt) => {
   const image = getStoreGalleryCardImage(template);
-  image.src = src;
+  image.src = `public/images/${src}`;
   image.alt = alt;
 };
 

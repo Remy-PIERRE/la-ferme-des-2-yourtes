@@ -25,7 +25,7 @@ export const setCarrouselSectionWrapper = (template, id, index) => {
 
 export const setCarrouselSectionImage = (template, src, alt) => {
   const image = getCarrouselSectionImage(template);
-  image.src = src;
+  image.src = `public/images/${src}`;
   image.alt = alt;
 };
 

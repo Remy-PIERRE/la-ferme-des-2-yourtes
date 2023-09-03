@@ -8,12 +8,12 @@ import {
 export const setHomeGalleryCardWrapper = (template, id, href) => {
   const wrapper = getHomeGalleryCardWrapper(template);
   wrapper.id = id;
-  wrapper.href = `/produit/${href}`;
+  // wrapper.href = `/produit/${href}`;
 };
 
 export const setHomeGalleryCardImage = (template, src, alt) => {
   const image = getHomeGalleryCardImage(template);
-  image.src = src;
+  image.src = `/public/images/${src}`;
   image.alt = alt;
 };
 
