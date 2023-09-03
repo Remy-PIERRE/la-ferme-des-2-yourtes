@@ -29,3 +29,8 @@ export const getHomeGalleryCardDescription = (template) => {
   const description = template.querySelector("p");
   return description;
 };
+
+export const getHomeGalleryCards = () => {
+  const cards = [...document.querySelectorAll(".gallery__card__wrapper")];
+  return cards;
+};
