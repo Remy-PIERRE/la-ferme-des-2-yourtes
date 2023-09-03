@@ -3,6 +3,14 @@
   /* background: green; */
 }
 
+.nav__user {
+  display: none !important;
+}
+
+.nav__pages {
+  margin-right: 0 !important;
+}
+
 /* main */
 * {
   padding: 0;
