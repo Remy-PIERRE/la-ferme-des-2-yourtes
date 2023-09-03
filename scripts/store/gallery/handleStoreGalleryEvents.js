@@ -1,3 +1,4 @@
+import { getOriginPathName } from "../../utils/getPathName.js";
 import { getStoreGalleryCards } from "./getStoreGalleryElements.js";
 
 export const handleStoreGalleryEvents = () => {
@@ -10,5 +11,5 @@ export const handleStoreGalleryEvents = () => {
 const handleStoreGalleryCardClick = (event) => {
   const target = event.currentTarget;
   window.localStorage.setItem("currentProduct", target.id);
-  window.location.href = `${window.location.origin}/produit.html`;
+  window.location.href = `${getOriginPathName()}produit.html`;
 };

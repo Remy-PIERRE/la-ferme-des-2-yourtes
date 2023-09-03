@@ -42,5 +42,13 @@ const initPage = async () => {
   }
 };
 
-// localStorage.clear();
 initPage();
+
+/* DEV */
+const storageReset = document.querySelector("#storageReset");
+if (storageReset) {
+  storageReset.addEventListener("click", () => {
+    localStorage.clear();
+    console.log("localStorage cleared");
+  });
+}

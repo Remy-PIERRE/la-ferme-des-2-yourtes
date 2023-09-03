@@ -25,3 +25,8 @@ export const getHeaderMenuMobileCross = () => {
   const cross = menu.querySelector(".menu__mobile__cross");
   return cross;
 };
+
+export const getHeaderLogos = () => {
+  const logos = [...document.querySelectorAll(".header__logo")];
+  return logos;
+};
