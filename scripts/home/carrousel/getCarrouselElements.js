@@ -53,3 +53,8 @@ export const getCarrouselNextButton = () => {
   const button = document.querySelector("#carrouselNextButton");
   return button;
 };
+
+export const getCarrouselSectionbackground = (template) => {
+  const background = template.querySelector(".carrousel__content__wrapper");
+  return background;
+};

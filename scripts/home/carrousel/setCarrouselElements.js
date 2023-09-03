@@ -6,11 +6,13 @@ import {
   getCarrouselSectionImage,
   getCarrouselSectionTitle,
   getCarrouselSectionWrapper,
+  getCarrouselSectionbackground,
 } from "./getCarrouselElements.js";
 import {
   addHiddenClass,
   removeHiddenClass,
 } from "../../utils/toggleClasses.js";
+import { getWindowMedia } from "../../window/windowMedia.js";
 
 export const setCarrouselContainer = (index) => {
   const container = getCarrouselContainer();
@@ -68,4 +70,11 @@ export const setCarrouselSection = (index, order) => {
 
   removeHiddenClass(section);
   section.style.order = order;
+};
+
+export const setCarrouselSectionBackground = (template, color) => {
+  if (getWindowMedia() !== "mobile") {
+    const background = getCarrouselSectionbackground(template);
+    background.style.background = color;
+  }
 };

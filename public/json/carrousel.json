@@ -1,32 +1,35 @@
 [
   {
-    "id": "1",
+    "id": "car_1",
     "title": "Titre 1 test clear",
     "description": "Description 1 test, test looooooong",
     "cta": {
       "text": "Boutique",
       "path": "/boutique"
     },
-    "imageUrl": "famille_ferme.jpg"
+    "imageUrl": "famille_ferme.jpg",
+    "bgColor": "#A1E2C3"
   },
   {
-    "id": "2",
+    "id": "car_2",
     "title": "Titre 2 test plus long",
     "description": "Description 2 test",
     "cta": {
       "text": "Blog",
       "path": "/blog"
     },
-    "imageUrl": "mouton.jpg"
+    "imageUrl": "mouton.jpg",
+    "bgColor": "#F1E1A1"
   },
   {
-    "id": "3",
+    "id": "car_3",
     "title": "Titre 3",
     "description": "Description 3 test, test looooooong, encore plus",
     "cta": {
       "text": "&Agrave; propos",
       "path": "/a-propos"
     },
-    "imageUrl": "mouton_portrait.jpg"
+    "imageUrl": "mouton_portrait.jpg",
+    "bgColor": "#F5A5A1"
   }
 ]
